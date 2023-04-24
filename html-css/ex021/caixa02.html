@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(247, 115, 115);
+            margin: 0px;   
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: auto;
+        }
+        h1{
+            box-shadow: inset 6px 5px 12px 0px rgba(0, 0, 0, 0.226);
+        }
+        nav{
+            background-color: deepskyblue;
+            box-shadow: 3px 2px 8px 1px rgba(0, 0, 0, 0.438);
+    
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            margin-right: 100px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            
+        }
+        main{
+            background-color: darkturquoise;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 6px 7px 20px 0px #00000070;
+            border-radius: 20px 10px;
+        }
+        article{
+            background-color: lightgray;
+            color: brown;
+        }
+        article > aside{
+            background-color: crimson;
+            color: black;
+            text-align: center;
+        }
+       
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 2px;
+            margin: 1px;
+
+        }
+        footer > p {
+            margin: 5px;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 50px auto;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 1px 1px 1px black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site!</h1>
+        <nav>
+            <a href="#" class="linknav">dsdasdasdsa</a>
+            <a href="#" class="linknav">dsdasdasdsa</a>
+            <a href="#" class="linknav">dsdasdasdsa</a>
+            <a href="#" class="linknav">dsdasdasdsa</a>
+            <a href="#" class="linknav">dsdasdasdsa</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi explicabo error facere! Facilis ex aliquam, soluta sequi accusamus nostrum blanditiis placeat deleniti modi autem excepturi, beatae recusandae, vitae optio sunt?
+            </article>
+            <article>
+                <h2>Se fudeu</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse, nobis officiis odio quam neque impedit nemo ad, suscipit, consectetur magni expedita voluptate blanditiis. Placeat perspiciatis iure incidunt accusamus alias?
+                <aside>
+                    escrito por ximba
+                </aside>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Ximbinha.</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* HTML > ID = # < CSS (apenas um elemento)
+   HTML > CLASS = . < CSS ( permitido mais de um elemento)
+*/
+
+body{
+    background-color: white;
+    color: #4b444e;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    text-align: justify;
+}
+
+h1{
+    background-color: rgb(0, 0, 0);
+    color: #dbdbdb;
+    width: 280px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #4b444e;
+
+}
+
+h1#principal{
+    background-color: black;
+    color: #dbdbdb;
+    width: 450px;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #4b444e;
+    
+    
+}
+
+h2{
+    color: #8d8094;
+}
+
+h2.basico{
+    color: rgb(85, 202, 85);
+}
+
+h2.intermediario{
+    color: rgb(255, 255, 96);
+}
+
+h2.avancado{
+    color: rgb(245, 87, 87);
+}
+
+.destaque{
+    background-color: dodgerblue;
+    width: fit-content;
+}
