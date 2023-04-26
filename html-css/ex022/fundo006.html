@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundo 006</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             height: 98vh;
@@ -14,11 +14,14 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
+            
+            /* shorthand do background
+            color > image > postition > repeat > [size (não está funcionando)] > attachment  */
         }
         
         main{
             background-color: white;
-            width: 400px;
+            max-width: 750px;
             padding: 10px;
             margin: auto;
             border: 5px solid black;
