@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 002</title>
+    <style>
+
+        h1{
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 900px;
+        }
+        
+        thead{
+            text-transform: capitalize;
+            background-color: black;
+            color: white;
+        }
+
+        td.adireita{
+            text-align: right;
+        }
+        
+        td{
+            border: 1px solid black;
+            text-indent: 3px;
+            padding: 4px;    
+        }
+        
+        th{
+            border: 1px solid black;
+            padding: 10px;
+            font-variant: small-caps;
+        }
+
+        tfoot{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--              ANATOMIA DE TABELAS GRANDES 
+        TABLE > THEAD (TR, TD, TH) > TBODY (TR, TD, TH) > TFOOT (TR, TD, TH) 
+    -->
+    <table>
+        <thead>
+            <tr>
+               <th>Posição</th>
+               <th>Unidade federativa</th>
+               <th>População <small>(Prévia 2022)</small></th>
+               <th>% da população total</th>
+            </tr> 
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+                <td class="adireita">46.024.937</td>
+                <td class="adireita">22,2%</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais</td>
+                <td class="adireita">20.732.660</td>
+                <td class="adireita">10,0%</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td class="adireita">16.615.526</td>
+                <td class="adireita">8,0%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bahia</td>
+                <td class="adireita">14.659.023</td>
+                <td class="adireita">7,1%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <th class="adireita">Total</td>
+                <td class="adireita"><strong>98.032.146</strong></td>
+                <td class="adireita"><strong>47,3%</strong></td>
+
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
