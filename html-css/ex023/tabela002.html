@@ -16,13 +16,28 @@
         table{
             font-family: Arial, Helvetica, sans-serif;
             border-collapse: collapse;
-            width: 900px;
+            width: 99vw;
+            position: relative;
+        }
+
+        caption{
+            font-size: 2em;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            font-variant: small-caps;
+            background-color: rgba(0, 0, 0, 0.26);
         }
         
         thead{
             text-transform: capitalize;
             background-color: black;
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: black;
         }
 
         td.adireita{
@@ -45,44 +60,70 @@
             background-color: black;
             color: white;
         }
+
+        tbody > tr:nth-child(odd){
+            background-color: rgba(0, 0, 0, 0.205);
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: rgb(255, 255, 255);
+        }
+
+        .popu{
+            width: 100px;
+        }
+
+        .poput{
+            width: 100px;
+        }
+
+        .pos{
+            width: 5px;
+            text-align: center;
+        }
+
+        .fed{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!--              ANATOMIA DE TABELAS GRANDES 
-        TABLE > THEAD (TR, TD, TH) > TBODY (TR, TD, TH) > TFOOT (TR, TD, TH) 
+        CAPTION > TABLE > THEAD (TR, TD, TH) > TBODY (TR, TD, TH) > TFOOT (TR, TD, TH) 
     -->
     <table>
+        <caption>População dos Estados</caption>
         <thead>
             <tr>
-               <th>Posição</th>
-               <th>Unidade federativa</th>
-               <th>População <small>(Prévia 2022)</small></th>
-               <th>% da população total</th>
+               <th scope="col" class="pos">Posição</th>
+               <th scope="col" class="fed">Unidade federativa</th>
+               <th scope="col" class="popu">População <small>(Prévia 2022)</small></th>
+               <th scope="col" class="poput">% da população total</th>
             </tr> 
         </thead>
         <tbody>
             <tr>
-                <td>1</td>
-                <td>São Paulo</td>
+                <td class="pos">1</td>
+                <td class="fed">São Paulo</td>
                 <td class="adireita">46.024.937</td>
                 <td class="adireita">22,2%</td>
             </tr>
             <tr>
-                <td>2</td>
-                <td>Minas Gerais</td>
+                <td class="pos">2</td>
+                <td class="fed">Minas Gerais</td>
                 <td class="adireita">20.732.660</td>
                 <td class="adireita">10,0%</td>
             </tr>
             <tr>
-                <td>3</td>
-                <td>Rio de Janeiro</td>
+                <td class="pos">3</td>
+                <td class="fed">Rio de Janeiro</td>
                 <td class="adireita">16.615.526</td>
                 <td class="adireita">8,0%</td>
             </tr>
             <tr>
-                <td>4</td>
-                <td>Bahia</td>
+                <td class="pos">4</td>
+                <td class="fed">Bahia</td>
                 <td class="adireita">14.659.023</td>
                 <td class="adireita">7,1%</td>
             </tr>
@@ -90,7 +131,7 @@
         <tfoot>
             <tr>
                 <td></td>
-                <th class="adireita">Total</td>
+                <th class="adireita" scope="row">Total</td>
                 <td class="adireita"><strong>98.032.146</strong></td>
                 <td class="adireita"><strong>47,3%</strong></td>
 
@@ -98,5 +139,10 @@
         </tfoot>
     </table>
 
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum dolor saepe enim veniam ipsum, cupiditate voluptates ipsam molestiae similique, minus molestias. Suscipit fuga dolor corporis aliquid minima aliquam aperiam amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, non quidem! Ipsam nam, deserunt praesentium accusamus harum corporis, unde nulla est consectetur omnis non repellat sunt tempora quisquam ut. Quidem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolore, expedita est cumque molestias eaque odit iure ipsam iste? Illo architecto nobis est debitis nesciunt facere necessitatibus, veniam natus eos? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid iure assumenda repudiandae aut voluptas explicabo, delectus velit eligendi sit beatae, magni veniam molestias omnis eos nihil temporibus ipsa. Iusto, fugiat!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum dolor saepe enim veniam ipsum, cupiditate voluptates ipsam molestiae similique, minus molestias. Suscipit fuga dolor corporis aliquid minima aliquam aperiam amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, non quidem! Ipsam nam, deserunt praesentium accusamus harum corporis, unde nulla est consectetur omnis non repellat sunt tempora quisquam ut. Quidem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolore, expedita est cumque molestias eaque odit iure ipsam iste? Illo architecto nobis est debitis nesciunt facere necessitatibus, veniam natus eos? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid iure assumenda repudiandae aut voluptas explicabo, delectus velit eligendi sit beatae, magni veniam molestias omnis eos nihil temporibus ipsa. Iusto, fugiat!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum dolor saepe enim veniam ipsum, cupiditate voluptates ipsam molestiae similique, minus molestias. Suscipit fuga dolor corporis aliquid minima aliquam aperiam amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, non quidem! Ipsam nam, deserunt praesentium accusamus harum corporis, unde nulla est consectetur omnis non repellat sunt tempora quisquam ut. Quidem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolore, expedita est cumque molestias eaque odit iure ipsam iste? Illo architecto nobis est debitis nesciunt facere necessitatibus, veniam natus eos? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid iure assumenda repudiandae aut voluptas explicabo, delectus velit eligendi sit beatae, magni veniam molestias omnis eos nihil temporibus ipsa. Iusto, fugiat!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum dolor saepe enim veniam ipsum, cupiditate voluptates ipsam molestiae similique, minus molestias. Suscipit fuga dolor corporis aliquid minima aliquam aperiam amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, non quidem! Ipsam nam, deserunt praesentium accusamus harum corporis, unde nulla est consectetur omnis non repellat sunt tempora quisquam ut. Quidem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolore, expedita est cumque molestias eaque odit iure ipsam iste? Illo architecto nobis est debitis nesciunt facere necessitatibus, veniam natus eos? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid iure assumenda repudiandae aut voluptas explicabo, delectus velit eligendi sit beatae, magni veniam molestias omnis eos nihil temporibus ipsa. Iusto, fugiat!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum dolor saepe enim veniam ipsum, cupiditate voluptates ipsam molestiae similique, minus molestias. Suscipit fuga dolor corporis aliquid minima aliquam aperiam amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, non quidem! Ipsam nam, deserunt praesentium accusamus harum corporis, unde nulla est consectetur omnis non repellat sunt tempora quisquam ut. Quidem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolore, expedita est cumque molestias eaque odit iure ipsam iste? Illo architecto nobis est debitis nesciunt facere necessitatibus, veniam natus eos? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid iure assumenda repudiandae aut voluptas explicabo, delectus velit eligendi sit beatae, magni veniam molestias omnis eos nihil temporibus ipsa. Iusto, fugiat!</p>
 </body>
 </html>
