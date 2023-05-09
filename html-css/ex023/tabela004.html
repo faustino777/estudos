@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 001</title>
+    <style>
+        
+        table{
+            border-collapse: collapse;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1em;
+        }
+
+        caption{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2em;
+        }
+
+        th,td{
+            border: 1px solid black;
+            width: 100px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-variant: small-caps;
+        }
+
+        tr.men > td.name{
+            border: 1px solid rgb(43, 43, 255);
+        }
+
+        tr.woman > td.name{
+            border: 1px solid rgb(255, 30, 68);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Filmes favoritos</caption>
+        <thead>
+            <tr>
+                <th>Grupo</th>
+                <th>Nomes</th>
+                <th colspan="3">Filmes</th>
+            </tr>
+            <tr>
+                
+            </tr>
+            <tr>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="woman">
+                <th rowspan="3" style="background-color: rgb(255, 30, 68); color: white; font-variant: small-caps;">Mulheres</th>
+                <td class="name">Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr class="woman">
+                <td class="name">Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr class="woman">
+                <td class="name">Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr class="men">
+                <th rowspan="3" style="background-color: rgb(43, 43, 255); color: white; font-variant: small-caps;">Homens</th>
+                <td class="name">Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr class="men">
+                <td class="name">Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr class="men">
+                <td class="name">Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
