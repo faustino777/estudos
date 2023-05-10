@@ -12,7 +12,7 @@
 
         table{
             border-collapse: collapse;
-            min-width: 360px;
+            width: 700px;
         }
         
         caption{
@@ -58,79 +58,89 @@
         col.colarea{
             background-color: crimson;
         }
+
+        div#container{
+            overflow-x: auto;
+            width: 50vw;
+        }
     </style>
 </head>
 <body>
-    <table>
-        <colgroup>
-            <col class="colarea">
-            <col class="coldisc">
-            <col class="colnota1" span="2">
-            <col class="colmed">
-        </colgroup>
-
-        <caption> Notas Escolares</caption>
-        <thead>
-            <tr>
-                <th scope="col" rowspan="2">Área</th>
-                <th scope="col" rowspan="2">Disciplinas</th>
-                <th scope="colgroup" colspan="2">Notas</th>
-                <th scope="col" rowspan="2">Média</th>
-            </tr>
-            <tr>
-                <th scope="col">Nota 1</th>
-                <th scope="col">Nota 2</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="rowgroup" rowspan="4">Exatas</th>
-                <td>Matemática</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-            </tr>
-            <tr>
-                <td>Física</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-            </tr>
-            <tr>
-                <td>Química</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-            </tr>
-            <tr>
-                <td>Biologia</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-            </tr>
-            <tr>
-                <th scope="row" colspan="4" class="media">Média de Exatas</th>
-                <td class="media">0.0</td>
-            </tr>
-            <tr>
-                <th scope="rowgroup" rowspan="2">Humanas</th>
-                <td>História</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-            </tr>
-            <tr>
-                <td>Geografia</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-                <td class="num">0.0</td>
-            </tr>
-            <tr>
-                <th scope="row" colspan="4" class="media">Média de Humanas</th>
-                <td class="media">0.0</td>
-            </tr>
-
-        </tbody>
-    </table>
+    <h1>Teste tabelas</h1>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto et consequatur cupiditate eveniet architecto facere, laboriosam alias assumenda eligendi neque, dolorem temporibus eaque, excepturi sunt voluptatum ea nihil asperiores. Impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae unde dolorum fuga aliquid atque dicta. Inventore commodi labore iste repellat tenetur minima accusantium rem architecto, expedita, aspernatur corporis veniam qui.
+    </p>
+    
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="colarea">
+                <col class="coldisc">
+                <col class="colnota1" span="2">
+                <col class="colmed">
+            </colgroup>
+            <caption> Notas Escolares</caption>
+            <thead>
+                <tr>
+                    <th scope="col" rowspan="2">Área</th>
+                    <th scope="col" rowspan="2">Disciplinas</th>
+                    <th scope="colgroup" colspan="2">Notas</th>
+                    <th scope="col" rowspan="2">Média</th>
+                </tr>
+                <tr>
+                    <th scope="col">Nota 1</th>
+                    <th scope="col">Nota 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="rowgroup" rowspan="4">Exatas</th>
+                    <td>Matemática</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                </tr>
+                <tr>
+                    <td>Química</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                </tr>
+                <tr>
+                    <th scope="row" colspan="4" class="media">Média de Exatas</th>
+                    <td class="media">0.0</td>
+                </tr>
+                <tr>
+                    <th scope="rowgroup" rowspan="2">Humanas</th>
+                    <td>História</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                    <td class="num">0.0</td>
+                </tr>
+                <tr>
+                    <th scope="row" colspan="4" class="media">Média de Humanas</th>
+                    <td class="media">0.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
