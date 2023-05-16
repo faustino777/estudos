@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        div{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulário.</h1>
+    <form action="register.php" method="get" autocomplete="on">
+        <div>
+            <label for="iname">Nome completo:</label>
+            <input type="text" name="name" id="iname" required maxlength="30" placeholder="Obrigatório" autocomplete="name">
+        </div>
+        <div>
+            <label for="imed">Média:</label>
+            <input type="number" name="med" id="imed" min="0" max="10" step="0.1" placeholder="0 a 10" required>
+        </div>
+        <div>
+            <label for="imon">Período letivo:</label>
+            <input type="month" name="mon" id="imon" required value="2023-01">
+
+        </div>
+        <div>
+            <label for="iday">Dia da prova:</label>
+            <input type="date" name="day" id="iday" value="2023-01-01" required>
+        </div>
+        <div>
+            <label for="ihour">Horário da prova:</label>
+            <input type="time" name="hour" id="ihour" value="12:00" required>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+
+    </form>
+</body>
+</html>
