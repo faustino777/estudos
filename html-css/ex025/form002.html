@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulário.</h1>
+    <form action="register.php" method="post" autocomplete="on">
+        <div>
+            <label for="iuser">Usuário:*</label>
+            <input type="text" name="user" id="iuser" required minlength="4" size="20" placeholder="obrigatório*" autocomplete="username">
+        </div>
+        <div>    
+            <label for="ipassword">Senha:*</label>
+            <input type="password" name="password" id="ipassword" required minlength="8" maxlength="16" size="16" placeholder="obrigatório*" autocomplete="current-password">
+        </div>
+        <div>
+            <input type="submit" value="Login">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
