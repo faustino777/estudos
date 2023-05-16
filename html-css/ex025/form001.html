@@ -15,7 +15,11 @@
 </head>
 <body>
     <h1>Meu primeiro formulário.</h1>
-    <form action="register.php" autocomplete="off">
+    <!-- method get deixa os dados visíveis na url
+        (get só pode ser usado em formulários que não contenham dados sensíveis e também não pode ser usado em envios de fotos ou qualquer outro tipo de arquivo (não pode passar de 3.000bytes) )
+    method post deixa os dados invisíveis na url
+    (post é usado para formulários que contenham dados sensíveis, formulários façam envios de imagens ou arquivos, e aqueles que passem de 3.000 bytes  ) -->
+    <form action="register.php" method="post" autocomplete="off">
         <p> <label for="ifirstname">Nome:</label> 
             <input type="text" name="firstname" id="ifirstname">
         </p>
