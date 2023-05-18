@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* Style for printers */
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html, body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1em;
+    width: 99vw;
+    height: 99vh;
+}
+
+menu{
+    display: none;
+}
+
+article::after{
+    content: '*Impresso no dia 18/05*';
+    width: 100%;
+}
