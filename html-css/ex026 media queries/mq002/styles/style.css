@@ -13,7 +13,7 @@ html, body{
     height: 100vh;
     background-color: #233EFF;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     background-position: top center;
 }
