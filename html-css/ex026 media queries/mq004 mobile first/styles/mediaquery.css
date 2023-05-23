@@ -2,3 +2,102 @@
 
 /* Outras medias */
 
+/* Typical DEvice Breakpoints */
+
+/* 
+Aparelhos muito pequenos (phones, max-width: 600px)
+
+Aparelhos pequenos (tablets em modo retrato e telefones grande, min-width: 600px)
+
+Aparelhos médios (tablets em modo paisagem, min-width: 768px)
+
+Aparelhos grandes (notebooks/desktops, min-width: 992px)
+
+Aparelhos muito grandes (grandes notebooks,desktops e TV, min-width: 1200px)
+ */
+
+/* Impressoras */
+@media print {
+    * {
+        font-family: monospace;
+    }
+    
+    body {
+        background-image: url('../images/back-print.jpg');
+        /* background-image não aparece em impressões */
+        
+    }
+
+    main {
+        border: 3px solid black;
+        width: 90vw;
+        height: 90vh;
+    }
+
+    body::after {
+        content: "Está impressão foi emitida no dia 23/05";
+        text-decoration: underline;
+        font-size: 0.5em;
+    }
+
+    h1 {
+        text-shadow: none;
+    }
+
+    img.phone {display: none;}
+    img.tablet {display: none;}
+    img.printer {display: block;}
+    img.desktop {display: none;}
+    img.tv {display: none;}
+}
+
+ /* Aparelhos médios */
+ @media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url('../images/back-tablet.jpg');
+    }
+
+    main {
+        width: 568px;
+    }
+
+    img.phone {display: none;}
+    img.tablet {display: block;}
+    img.printer {display: none;}
+    img.desktop {display: none;}
+    img.tv {display: none;}
+ }
+
+ /* Aparelhos grandes */
+ @media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url('../images/back-pc.jpg');
+    }
+
+    main {
+        width: 792px;
+    }
+
+    img.phone {display: none;}
+    img.tablet {display: none;}
+    img.printer {display: none;}
+    img.desktop {display: block;}
+    img.tv {display: none;}
+ }
+
+ /* Aparelhos muito grandes */
+ @media screen and (min-width: 1200px) {
+    body {
+        background-image: url('../images/back-tv.jpg');
+    }
+
+    main {
+        width: 1000px;
+    }
+
+    img.phone {display: none;}
+    img.tablet {display: none;}
+    img.printer {display: none;}
+    img.desktop {display: none;}
+    img.tv {display: block;}
+ }
