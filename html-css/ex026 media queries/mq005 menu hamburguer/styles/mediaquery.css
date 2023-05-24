@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+/* Outras dispositivos */
+
+/* Typical DEvice Breakpoints */
+
+/* 
+Aparelhos muito pequenos (phones, max-width: 600px)
+
+Aparelhos pequenos (tablets em modo retrato e telefones grande, min-width: 600px)
+
+Aparelhos médios (tablets em modo paisagem, min-width: 768px)
+
+Aparelhos grandes (notebooks/desktops, min-width: 992px)
+
+Aparelhos muito grandes (grandes notebooks,desktops e TV, min-width: 1200px)
+ */
+
+
+ /* Telas médias */
+ @media screen and (min-width: 768px) and (max-width: 992px) {
+    span#symbol{
+        display: none;
+    }
+
+    nav{
+        display: inline-block;
+    }
+
+    nav ul {
+        padding: 15px;
+        list-style: none;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: auto;
+        padding: 10px;
+        width: 100px;
+    
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.267);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    main {
+        width: 768px;
+    }
+
+}
+
+/* Telas grandes */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    
+    span#symbol{
+        display: none;
+    }
+
+    nav{
+        display: inline-block;
+    }
+
+    nav ul {
+        padding: 15px;
+        list-style: none;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: auto;
+        padding: 10px;
+        width: 100px;
+    
+    }
+
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.267);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    main {
+        width: 992px;
+    }
+}
+
+/* Telas grandes */
+@media screen and (min-width: 1200px) {
+    span#symbol{
+        display: none;
+    }
+
+    nav{
+        display: inline-block;
+    }
+
+    nav ul {
+        padding: 15px;
+        list-style: none;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: auto;
+        padding: 10px;
+        width: 100px;
+    
+    }
+
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.267);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    main {
+        width: 800px;
+    }
+}
