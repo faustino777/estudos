@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, rgb(111, 197, 255), white);
+            color: rgb(37, 37, 37);
+            font: bolder 1.2em 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+        <p>Já me livrei da maldição!</p>
+
+         <!-- Variáveis só podem começar com letra, $ ou _. 
+            Não podem começar com número.
+            É possível usar acentos e símbolos.
+            Não pode conter espaços.
+            Não podem conter palavras reservadas. 
+            Maiúsculas e minúsculas fazem diferença.
+            Use nomes coerentes para aw variáveis.-->
+
+        <script>
+            var num1 = Number(window.prompt('Digite o primeiro número:'))
+            var num2 = Number(window.prompt('Digite o segundo número: ')) 
+            var s = num1 + num2
+            
+            // o '+' serve para adição DE NÚMEROS, mas também serve para concatenação DE STRINGS.
+
+            // number + numer = adição
+            // string + string = concatenação
+            // Para converter o dado em números inteiros: Number.parseInt(n)
+            // Para converter o dado em números reais: Number.parseFloat(n)
+            // Usar apenas o Number() é mais fácil, pois ele decide se o número é inteiro ou real.
+            //---------------------------------------------------------
+            // num1.toString()
+            // Para converter o dado em string, se usa o 'String()' e o 'n.toString()'.
+
+            window.alert(`O resultado da soma do número ${num1} entre o número ${num2} é igual a ${s}`)
+
+            // ${} : placeholder
+            // o placeholder só vai dentro de templatestring, que tem ' ` (crase) ' no início e no final.
+        </script>
+</body>
+</html>

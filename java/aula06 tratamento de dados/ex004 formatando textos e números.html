@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+    s.lenth = quantos caracteres a string tem.
+    s.toUpperCase() = para transformar as letras em maiúsculas.
+    s.toLowerCasa() = para transformar em minúsculas. 
+    -->
+
+    <!-- 
+        exemplo.toFixed(2) é para definir quantas casas decimais irão aparecer.
+
+        exemplo.toFixed(2).replace('.',',') é para trocar o ponto final pela vírgula, na exibição.
+
+        exemplo.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) é para formatar certo número, no modo de moeda brasileira de exibição.
+     -->
+     
+
+    <script>
+        var name = window.prompt('Qual o seu nome ? ')
+        document.write(`Seu nome tem ${name.length} letras! <br>`)
+        document.write(`Seu nome em maiúsculo: ${name.toUpperCase()}.<br>`) 
+        document.write(`Seu nome em minúsculo: ${name.toLowerCase()}.`)
+    </script>
+</body>
+</html>
