@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: rgb(121, 133, 243);
+            color: white;
+        }
+
+        h1, p {
+            text-align: center;
+            margin: 20px;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 name="titulo">Iniciando estudos com DOM.</h1>
+            <p>Aqui vai o resultado!</p>
+            <p class="p2">Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+        <div id="msg">Clique em mim!</div>
+    </main>
+    <script>
+
+        // Selecionando elementos por TagName
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write(`Está escrito assim: ${p1.innerText}`)
+        p1.style.textDecoration = 'underline'
+        corpo.style.backgroundColor = '#FF99FF'
+        
+        // Selecionando elementos por ID
+        var msg1 = document.getElementById('msg')
+        msg1.style.fontVariant = 'small-caps'
+        msg1.style.backgroundColor = '#FF0000'
+        /* msg1.innerText = 'CLIQUE EM MIM, AGORA!'*/
+        document.getElementById('msg').innerText = 'CLIQUE EM MIM, AGORA!'
+
+        // Selecionando elementos por name
+        var titulo1 = document.getElementsByName('titulo')[0]
+        titulo1.style.textShadow = '0px 0px 10px black'
+
+        // Selecionando elementos por class
+        var pa2 = document.getElementsByClassName('p2')[0]
+        pa2.style.textDecoration = 'overline'
+
+        // Selecionando elementos por seletor
+        var qs1 = document.querySelector('p.p2')
+        qs1.style.fontVariant = 'small-caps'
+        qs1.style.backgroundColor = 'black'
+        
+
+
+    </script>
+</body>
+</html>
