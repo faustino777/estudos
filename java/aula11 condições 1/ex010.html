@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        #res {
+            display: block;
+            padding: 10px;
+            color: black;
+            font-weight: lighter;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <label for="tvel">Velocidade:</label>
+    <input type="number" name="tvel" id="tvel" placeholder="km/h">
+    <input type="button" value="Verificar" id="ver">
+
+    <div id="res"> <p>DIRIJA COM CUIDADO!</p></div>
+
+    <script>
+        var verify = document.getElementById('ver')
+        verify.addEventListener('click', verifyv)
+        function verifyv() {  
+            var tvel = document.getElementById('tvel')
+            var res = document.getElementById('res')
+            vel = Number(tvel.value)
+            if (vel > 60) {
+                res.innerHTML = `Sua velocidade é de: <strong>${vel}km/h</strong>. Você está acima da velocidade, cabaço!`
+            } else {
+                res.innerHTML = `Sua velocidade atual é de <strong>${vel}km/h</strong>. Você está nos limites de velocidade.`
+            }
+            
+        }
+    </script>
+</body>
+</html>

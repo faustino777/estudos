@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de nacionalidade.</h1>
+    <label for="country">Seu país:</label>
+    <input type="text" name="country" id="country">
+    <input type="button" value="Enviar" id="send">
+    <div id="resul">
+        <p>RESULTADO</p>
+    </div>
+
+    <script>
+        var country = document.getElementById('country')
+        var res = document.getElementById('resul')
+        var sen = document.getElementById('send')
+        sen.addEventListener('click', enviar)
+
+        function enviar() {
+            if (country.value == 'Brasil') {
+                res.innerHTML = 'Olá, meu compatriota!'
+            } else {
+                res.innerHTML = 'Olá, gringo pilantra'
+            }
+        }
+
+    </script>
+</body>
+</html>
