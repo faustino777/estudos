@@ -33,20 +33,22 @@
 </head>
 <body>
     <h1>Somando valores.</h1>
-        <input type="number" name="txt1" id="txt1"> +
-        <input type="number" name="txt2" id="txt2">
-        <input type="button" value="Somar" onclick="soma()">
+        <input type="number" name="num1" id="num1"> +
+        <input type="number" name="num2" id="num2">
+        <input type="button" value="Somar" id="soma">
         <div id="res">=</div>
     <script>
-        function soma() {
-            var txt1 = document.getElementById('txt1')
-            var txt2 = document.getElementById('txt2')
-            var res = document.getElementById('res')
-            var n1 = Number(txt1.value)
-            var n2 = Number(txt2.value)
-            var s = n1 + n2
-            res.innerHTML = (`O resultado da soma é : <strong>${s}</strong>`)
+        var somarv = document.getElementById('soma')
+        somarv.addEventListener('click', somar)
 
+        function somar() {
+            var num1 = document.getElementById('num1')
+            var num2 = document.getElementById('num2')
+            var res = document.getElementById('res')
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var rs = n1 + n2
+            res.innerHTML = `O resultado da soma é: <strong>${rs}</strong>`
         }
     </script>
 </body>
