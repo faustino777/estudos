@@ -77,6 +77,16 @@ div#img {
     margin-top: 20px;
 }
 
+img {
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 175px;
+    height: 175px;
+    overflow: hidden;
+}
+
 footer {
     margin-top: 50px;
 }

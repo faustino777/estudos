@@ -16,6 +16,7 @@ function verificar() {
         var age = year - Number(fYear.value)
         var gender = ` `
         var img = document.createElement('img')
+        img.setAttribute('id' , 'imgJS')
 
         if (genderM.checked) {
             gender = 'Homem'
@@ -37,12 +38,16 @@ function verificar() {
             gender = 'Mulher'
             if (age >= 0 && age <= 10) {
                 //criança
+                img.setAttribute('src', 'Mulher/bebe.jpg')
             } else if (age >= 11 && age <= 21) {
                 //Jovem
+                img.setAttribute('src', 'Mulher/jovem.jpg')
             } else if (age >= 22 && age <= 60) {
                 //adulto
+                img.setAttribute('src', 'Mulher/adulto.jpg')
             } else {
                 //idoso
+                img.setAttribute('src', 'Mulher/idoso.jpg')
             }
         }
         res.style.textAlign = 'center'
