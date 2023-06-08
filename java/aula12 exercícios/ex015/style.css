@@ -39,10 +39,42 @@ section {
 
 }
 
-div {
-    margin: auto;
-    width: 495px;
-    height: 200px;
+div#form {
+    margin: 5px;
+    padding: 25px;
+    text-align: center;
+}
+
+div#form input {
+    margin: 5px;
+}
+
+input#tage {
+    width: 50px;
+}
+
+div#form label {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+div#form #verify {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+div#form #verifyb {
+    width: 200px;
+    font-weight: 600;
+}
+
+div#img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 footer {
