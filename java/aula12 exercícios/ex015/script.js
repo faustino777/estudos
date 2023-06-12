@@ -16,7 +16,7 @@ function verificar() {
         var age = year - Number(fYear.value)
         var gender = ` `
         var img = document.createElement('img')
-        img.setAttribute('id' , 'imgJS')
+        img.setAttribute('id' , 'imgJS') 
 
         if (genderM.checked) {
             gender = 'Homem'
