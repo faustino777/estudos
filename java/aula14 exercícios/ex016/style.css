@@ -32,7 +32,7 @@ main {
 section {
     background-color: white;
     width: 500px;
-    height: 400px;
+    height: 40%;
     border-radius: 25px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
@@ -55,23 +55,24 @@ div#text {
 
 div#form input, label {
     display: block;
-    text-align: right;
+    text-align: center;
 }
 
-div#form button {
-    margin-top: 20px;
+input#button {
+    background-color: white;
+    border: 1px solid rgb(110, 110, 110);
     width: 187px;
     height: 25px;
-    background-color: white;
-    border: 1px solid rgb(117, 117, 117);
     border-radius: 3px;
-    cursor: pointer;
 }
 
-div#res {
+
+div#txtres {
     display: grid;
     place-items: center;
-    margin-top: 10px;
+    margin: 30px;
+    text-align: center;
+
 }
 
 footer {
