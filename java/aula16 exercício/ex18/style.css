@@ -31,17 +31,12 @@ main {
 
 section {
     background-color: white;
-    width: 500px;
-    height: 400px;
+    width: 700px;
+    height: 450px;
     border-radius: 25px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
 
-}
-
-div {
-    
-    width: 495px;
 }
 
 div#numinput {
@@ -49,6 +44,7 @@ div#numinput {
     align-items: center;
     justify-content: center;
     height: 110px;
+    width: 700px;
     text-transform: uppercase;
 }
 
@@ -63,7 +59,9 @@ div#numinput input {
 div#selectednum {
     display: grid;
     place-items: center;
-    height: 290px;
+    float: left;
+    height: 340px;
+    width: 350px;
 }
 
 div#selectednum select {
@@ -76,6 +74,13 @@ div#selectednum input {
     margin-bottom: 20px;
     background-color: white;
     border: 1px solid rgb(161, 161, 161);
+}
+
+div#result {
+    float: right;
+    height: 340px;
+    width: 350px;
+    text-align: center;
 }
 
 footer {
