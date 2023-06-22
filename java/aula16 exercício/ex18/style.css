@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html , body {
+    background-color: rgb(255, 182, 182);
+    height: 100vh;
+}
+
+header {
+    margin: 30px;
+}
+
+header h1 {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.253);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
+
+}
+
+div {
+    
+    width: 495px;
+}
+
+div#numinput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    text-transform: uppercase;
+}
+
+div#numinput input {
+    margin: 5px;
+    width: 75px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid rgb(161, 161, 161);
+}
+
+div#selectednum {
+    display: grid;
+    place-items: center;
+    height: 290px;
+}
+
+div#selectednum select {
+    width: 200px;
+    text-align: center;
+}
+
+div#selectednum input {
+    width: 100px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid rgb(161, 161, 161);
+}
+
+footer {
+    margin-top: 50px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    font-variant: small-caps;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.253);
+    font-style: italic;
+}
